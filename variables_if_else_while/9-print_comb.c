@@ -17,21 +17,25 @@ int main(void)
 		j = i + 1;
 		while (j <= '9')
 		{
-			putchar(i);
-			putchar(j);
-			if (i != '8' || j != '9')
+			c = i;
+			putchar(c);
+			c = ',';
+			putchar(c);
+			c = j;
+			putchar(c);
+			if (i == '8' && j == '9')
 			{
-				c = ',';
-				putchar(c);
-				c = ' ';
-				putchar(c);
+				c = '\n';
 			}
+			else
+			{
+				c = ' ';
+			}
+			putchar(c);
 			j++;
 		}
 		i++;
 	}
-	c = '\n';
-	putchar(c);
 
 	return (0);
 }
