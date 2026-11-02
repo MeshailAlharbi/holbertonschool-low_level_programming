@@ -1,17 +1,14 @@
 #include <stdio.h>
 
 /**
- * main - Prints all possible combinations of single-digit numbers,
- *        separated by `, `, followed by a new line.
+ * main - Prints all possible combinations of single-digit numbers.
  *
  * Return: Always 0 (Success)
- * bibliographic/formatting compliant with Betty style
  */
 int main(void)
 {
 	int i = '0';
 	int j;
-	int c = ' ';
 
 	while (i <= '8')
 	{
@@ -20,19 +17,16 @@ int main(void)
 		{
 			putchar(i);
 			putchar(j);
-			if (i == '8' && j == '9')
-			{
-				c = '\n';
-			}
 			if (i != '8' || j != '9')
 			{
 				putchar(',');
-				putchar(c);
+				putchar(' ');
 			}
 			j++;
 		}
 		i++;
 	}
+	putchar('\n');
 
 	return (0);
 }
