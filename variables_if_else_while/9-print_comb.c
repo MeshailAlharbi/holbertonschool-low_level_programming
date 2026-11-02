@@ -10,24 +10,30 @@ int main(void)
 {
 	int i = '0';
 	int j;
+	int c;
 
-	while (i <= '7')
+	while (i <= '8')
 	{
 		j = i + 1;
 		while (j <= '9')
 		{
 			putchar(i);
 			putchar(j);
-			if (i != '7' || j != '9')
+			c = ',';
+			if (i == '8' && j == '9')
 			{
-				putchar(',');
-				putchar(' ');
+				c = '\n';
+			}
+			putchar(c);
+			if (i != '8' || j != '9')
+			{
+				c = ' ';
+				putchar(c);
 			}
 			j++;
 		}
 		i++;
 	}
-	putchar('\n');
 
 	return (0);
 }
