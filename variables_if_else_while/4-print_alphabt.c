@@ -3,6 +3,8 @@
 /* Print all the letters except q and e */
 int main(void)
 {
+	char letter ='a'
+
 	while (letter <= 'z')
 {
 	if (letter != 'q' && letter != 'e')
