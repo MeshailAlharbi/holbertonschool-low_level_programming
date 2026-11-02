@@ -2,20 +2,24 @@
 
 /**
  * main - Prints the alphabet in lowercase, and then in uppercase,
- * followed by a new line.
+ *        followed by a new line.
+ *
+ * Return: Always 0 (Success)
  */
 int main(void)
 {
 	char letter = 'a';
 
-	while (letter <= 'z') {
+	while (letter <= 'z')
+	{
 		putchar(letter);
 		letter++;
 	}
 
 	letter = 'A';
 
-	while (letter <= 'Z') {
+	while (letter <= 'Z')
+	{
 		putchar(letter);
 		letter++;
 	}
