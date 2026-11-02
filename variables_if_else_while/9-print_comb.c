@@ -5,12 +5,13 @@
  *        separated by `, `, followed by a new line.
  *
  * Return: Always 0 (Success)
+ * bibliographic/formatting compliant with Betty style
  */
 int main(void)
 {
 	int i = '0';
 	int j;
-	int c;
+	int c = ' ';
 
 	while (i <= '8')
 	{
@@ -19,15 +20,13 @@ int main(void)
 		{
 			putchar(i);
 			putchar(j);
-			c = ',';
 			if (i == '8' && j == '9')
 			{
 				c = '\n';
 			}
-			putchar(c);
 			if (i != '8' || j != '9')
 			{
-				c = ' ';
+				putchar(',');
 				putchar(c);
 			}
 			j++;
