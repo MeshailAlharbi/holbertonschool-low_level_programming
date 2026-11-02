@@ -7,26 +7,24 @@
  */
 int main(void)
 {
-	int i = '0';
-	int j;
+	int n = '0';
+	int space = ' ';
 
-	while (i <= '8')
+	while (n <= '9')
 	{
-		j = i + 1;
-		while (j <= '9')
+		putchar(n);
+		if (n != '9')
 		{
-			putchar(i);
-			putchar(j);
-			if (i != '8' || j != '9')
-			{
-				putchar(',');
-				putchar(' ');
-			}
-			j++;
+			putchar(',');
+			putchar(space);
 		}
-		i++;
+		else
+		{
+			space = '\n';
+			putchar(space);
+		}
+		n++;
 	}
-	putchar('\n');
 
 	return (0);
 }
