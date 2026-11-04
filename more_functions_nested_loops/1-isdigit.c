@@ -5,7 +5,7 @@
  *@c: character to check
  * Return: 1 if digit, 0 otherwise
  */
-int main(void)
+int _isdigit(int c)
 {
     if (c>= '0' && c <= '9')
 	    return(1);
