@@ -4,7 +4,7 @@
  * @c: The character to locate
  *
  * Return: A pointer to the first occurrence of the character c,
- *         or NULL if the character is not found
+ *         or NULL (0) if the character is not found
  */
 char *_strchr(char *s, char c)
 {
@@ -22,5 +22,5 @@ char *_strchr(char *s, char c)
 		return (s);
 	}
 
-	return (NULL);
+	return (0);
 }
