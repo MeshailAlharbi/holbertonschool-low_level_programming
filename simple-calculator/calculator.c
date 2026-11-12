@@ -54,7 +54,14 @@ int main(void)
                 scanf("%d", &input1);
                 printf("Num2: ");
                 scanf("%d", &input2);
-                printf("%d / %d = %.2f\n\n", input1, input2, (float)input1 / input2);
+                if (input2 == 0)
+                {
+                    printf("Error: division by zero\n");
+                }
+                else
+                {
+                    printf("Result: %d\n", input1 / input2);
+                }
                 break;
 
             case 0: 
