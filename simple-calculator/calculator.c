@@ -58,11 +58,11 @@ int main(void)
                 break;
 
             case 0: 
-                printf("\nBye!\n");
+                printf("Bye!\n");
                 break;
 
             default:
-                printf("\nInvalid Input!\n\n");
+                printf("Invalid choice");
                 break;
         }
 
