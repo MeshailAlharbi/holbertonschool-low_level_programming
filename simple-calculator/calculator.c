@@ -26,9 +26,9 @@ int main(void)
         switch (choice)
         {
             case 1: 
-                printf("Num1: ");
+                printf("A: ");
                 scanf("%d", &input1);
-                printf("Num2: ");
+                printf("B: ");
                 scanf("%d", &input2);
                 printf("%d + %d = %d\n\n", input1, input2, input1 + input2);
                 break;
